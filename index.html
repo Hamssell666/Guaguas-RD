@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuaguaTime RD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🚌 GuaguaTime RD</h1>
+        <button id="theme-toggle">🌓 Cambiar Tema</button>
+    </header>
+    <main>
+        <section id="search">
+            <form id="route-form">
+                <label>Origen: <select id="origin-select" required></select></label>
+                <label>Destino: <select id="destination-select" required></select></label>
+                <fieldset id="conditions-container">
+                    <legend>Alertas actuales</legend>
+                </fieldset>
+                <button type="submit" id="btn-calculate">Calcular Ruta</button>
+            </form>
+        </section>
+        <section id="results">
+            <h2>Resultados</h2>
+            <div id="routes-container"></div>
+        </section>
+        <section id="favorites">
+            <h2>⭐ Mis Favoritos</h2>
+            <div id="favorites-container"></div>
+        </section>
+    </main>
+</body>
+</html>

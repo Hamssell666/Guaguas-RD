@@ -1,0 +1,33 @@
+{
+  "sectores": [
+    { "id": "DN_01", "nombre": "Piantini", "zona": "DN" },
+    { "id": "DN_02", "nombre": "Gazcue", "zona": "DN" },
+    { "id": "DN_03", "nombre": "Los Ríos", "zona": "DN" },
+    { "id": "SDE_01", "nombre": "Ensanche Ozama", "zona": "SDE" },
+    { "id": "SDN_01", "nombre": "Villa Mella", "zona": "SDN" }
+  ],
+  "rutas": [
+    {
+      "id": "R_001",
+      "nombre": "Corredor 27 de Febrero",
+      "tipo": "guagua",
+      "origen_id": "DN_01",
+      "destino_id": "SDE_01",
+      "tramos": [{ "tiempo_min": 20, "costo": 35 }],
+      "transbordos": 0
+    },
+    {
+      "id": "R_002",
+      "nombre": "Concho Máximo Gómez",
+      "tipo": "carro público",
+      "origen_id": "SDN_01",
+      "destino_id": "DN_02",
+      "tramos": [{ "tiempo_min": 35, "costo": 50 }],
+      "transbordos": 1
+    }
+  ],
+  "condiciones": [
+    { "id": "C_RAIN", "etiqueta": "Lluvia", "tiempo_pct": 40, "costo_extra": 25, "icono": "🌧️" },
+    { "id": "C_RUSH", "etiqueta": "Hora Pico", "tiempo_pct": 60, "costo_extra": 0, "icono": "🚗" }
+  ]
+}

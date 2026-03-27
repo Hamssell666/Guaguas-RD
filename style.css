@@ -1,0 +1,11 @@
+:root {
+    --primary: #003876; --bg: #f8fafc; --card: #ffffff; --text: #1e293b;
+}
+.dark-theme {
+    --bg: #0f172a; --card: #1e293b; --text: #f1f5f9;
+}
+body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 20px; }
+section { background: var(--card); padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+#route-form { display: flex; flex-direction: column; gap: 15px; }
+.route-card { border-left: 5px solid var(--primary); padding: 15px; margin-top: 10px; background: var(--bg); }
+button { cursor: pointer; padding: 10px; border-radius: 5px; border: none; background: var(--primary); color: white; }
